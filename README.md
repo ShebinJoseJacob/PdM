@@ -25,7 +25,7 @@ Also by collecting the parameters of motor like temperature,magnetic field, soun
 
 ## HardWare SetUp
 As stated earlier we are using an AC motor operating at 220V. A motor is a basic part of any of large machineries so the elemental motor is a good case study.
-![AC Motor for study](https://hackster.imgix.net/uploads/attachments/982710/uploads2ftmp2ff8bb06dc-9d5d-4046-adc0-55f7f7865f362fe91a6150_gGNkiJWCmK.JPG)
+![AC Motor for study](https://hackster.imgix.net/uploads/attachments/982710/uploads2ftmp2ff8bb06dc-9d5d-4046-adc0-55f7f7865f362fe91a6150_gGNkiJWCmK.jpeg?auto=compress%2Cformat&w=1920&h=1080&fit=max)
 ![Brainium](https://hackster.imgix.net/uploads/attachments/982712/uploads2ftmp2fc3b633ea-433b-4387-83f4-638dbd355b612fe91a6145_Dv2zDD7Mo6.JPG)
 We mount SmartEdge Agile on the motor and fix it firmly.
 ![Experimental Setup](https://hackster.imgix.net/uploads/attachments/982711/uploads2ftmp2fabb20c6f-e21f-4719-92ed-112b051d31312fe91a6154_ArmWuHcxgf.JPG)
