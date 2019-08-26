@@ -100,3 +100,9 @@ the password is different for each user and equals to external access token (it'
 
 We run this python code in Raspberry Pi which waits for alerts to be triggered in the brainium portal. When alert is triggered we get the value in the program. After the value is received, the program checks for anomalous(faulty behaviour) PdM pattern and if any triggers an alert in android application or any other suitable UI. Also the sensors data are saved into cloud for further processing. From the sensory data by using ML algorithms time before next failure can be approximated.
 The more details about how to use python code is described [here](Python)
+
+### Mobile App
+
+We are providing a Mobile app that enables users to analyse the machine. For more details about mobile app please visit our GitHub repository
+
+
