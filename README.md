@@ -25,6 +25,7 @@ Also by collecting the parameters of motor like temperature,magnetic field, soun
 
 ## HardWare SetUp
 As stated earlier we are using an AC motor operating at 220V. A motor is a basic part of any of large machineries so the elemental motor is a good case study.
+
 ![AC Motor for study](https://hackster.imgix.net/uploads/attachments/982710/uploads2ftmp2ff8bb06dc-9d5d-4046-adc0-55f7f7865f362fe91a6150_gGNkiJWCmK.JPG?auto=compress%2Cformat&w=740&h=555&fit=max "AC Motor")
 
 ![Brainium](https://hackster.imgix.net/uploads/attachments/982712/uploads2ftmp2fc3b633ea-433b-4387-83f4-638dbd355b612fe91a6145_Dv2zDD7Mo6.JPG?auto=compress%2Cformat&w=740&h=555&fit=max "SmartEdge Agile")
@@ -41,5 +42,61 @@ We use Raspberry Pi as the output UI for users to analyse the machine. The pytho
 To use our SmartEdge Agile device, first we need o create an account on the [Brainium platform](https://brainium.com). The we can download the Brainium Gateway companion app to our phone and use our newly created account to log into it. The phone will act as a gateway, between the Brainium Portal and our AI devices connected over Bluetooth.
 
 ![](https://hackster.imgix.net/uploads/attachments/982716/uploads2ftmp2f47708d8a-269a-41a0-a8d3-a267096b1ccd2fphoto_2019-08-23_22-05-32_GAWM810JUk.jpg?auto=compress%2Cformat&w=740&h=555&fit=max "GATEWAY")
+
+
 ![](https://hackster.imgix.net/uploads/attachments/982735/uploads2ftmp2ff3666441-9d98-45ed-a232-be40d7e667382fbc_1OjgPWz706.png?auto=compress%2Cformat&w=740&h=555&fit=max "ALL CONNECTED DEVICES WILL SHOW UP HERE")
+
+### Predictive Maintenance
+
+After setting up brainium gateway let's build a new project. Then go to PdM panel and create a new PdM workspace
+
 ![](https://hackster.imgix.net/uploads/attachments/982738/uploads2ftmp2fcab09243-38a4-429a-a05b-b21d0ef1bf912fbd_WCV9qngWtT.png?auto=compress%2Cformat&w=740&h=555&fit=max "PdM Wrokspace")
+
+### Initial Learning stage
+
+In this stage the platform tries to learn how our device normally operates. It tries to identify stationary(states) and dynamic(transitions between states)patterns, based on the sensor data of the SmartEdge Agile.
+
+In our case we have mainly 3 normal states
+
+1. Turning On
+2. Normal Working Mode
+3. Turning Off
+
+Also we have added certain other patterns that may be generated during working such as vibration pattern with unbound or loose screws, vibrations with something stuck inside motor etc.
+
+![](https://hackster.imgix.net/uploads/attachments/982741/uploads2ftmp2f5905907b-9ae4-4685-9566-048667da62062fpattern_28229_IvRJcM1OCz.jpg?auto=compress%2Cformat&w=740&h=555&fit=max "Patterns")
+
+Once we have got enough data patterns let's generate the model and apply it to SmartEdge Agile.
+
+### Continuous Learning stage
+
+In this stage the portal keeps on learning new patterns to get a complete knowledge about working of our device. The more patterns we detect the more accurate will be the prediction.
+
+### Rules and Alerts
+
+After the application of model to the device we want to enforce certain rules for the portal to respond. We can have two type of rules
+
+### AI rules
+AI rules are those rules that can be applied for motion recognition and PdM. In our project we enforce certain rules. According to these rules the portal produce alerts.
+
+### Normal rules
+AI rules are those rules that can be applied for sensors. In our project we enforce certain rules. According to these rules the portal produce alerts.
+
+![](https://hackster.imgix.net/uploads/attachments/982743/uploads2ftmp2f762b1d26-a2ec-472f-b149-5bddd98dc8922fdashboard28229_2HUZRwOuOU.jpg?auto=compress%2Cformat&w=740&h=555&fit=max "Dashboard")
+
+#### MQTT over WebSocket API
+
+MQTT API provides access to the data which has been sent from user's devices in real-time.
+
+#### How to connect
+
+MQTT API is available over WebSockets by the following URI: wss://ns01-wss.brainium.com and it's secured. The MQTT protocol provides username and password fields in the CONNECT message for authentication. The client has the option to send a username and a password when it connects to an MQTT broker. For connection to Brainium Platform this option is a must:
+
+the username has the specified static value : oauth2-user
+the password is different for each user and equals to external access token (it's available in the user's profile).
+
+
+### Python Code
+
+We run this python code in Raspberry Pi which waits for alerts to be triggered in the brainium portal. When alert is triggered we get the value in the program. After the value is received, the program checks for anomalous(faulty behaviour) PdM pattern and if any triggers an alert in android application or any other suitable UI. Also the sensors data are saved into cloud for further processing. From the sensory data by using ML algorithms time before next failure can be approximated.
+The more details about how to use python code is described [here](Python)
