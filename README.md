@@ -103,6 +103,6 @@ The more details about how to use python code is described [here](Python)
 
 ### Mobile App
 
-We are providing a Mobile app that enables users to analyse the machine. For more details [here](Android)
+We are providing a Mobile app that enables users to analyse the machine. Find more details [here](Android)
 
 
