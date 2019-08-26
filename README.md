@@ -39,3 +39,7 @@ We use Raspberry Pi as the output UI for users to analyse the machine. The pytho
 ### Getting Started With Brainium
 
 To use our SmartEdge Agile device, first we need o create an account on the [Brainium platform](https://brainium.com). The we can download the Brainium Gateway companion app to our phone and use our newly created account to log into it. The phone will act as a gateway, between the Brainium Portal and our AI devices connected over Bluetooth.
+
+![](https://hackster.imgix.net/uploads/attachments/982716/uploads2ftmp2f47708d8a-269a-41a0-a8d3-a267096b1ccd2fphoto_2019-08-23_22-05-32_GAWM810JUk.jpg?auto=compress%2Cformat&w=740&h=555&fit=max "GATEWAY")
+![](https://hackster.imgix.net/uploads/attachments/982735/uploads2ftmp2ff3666441-9d98-45ed-a232-be40d7e667382fbc_1OjgPWz706.png?auto=compress%2Cformat&w=740&h=555&fit=max "ALL CONNECTED DEVICES WILL SHOW UP HERE")
+![](https://hackster.imgix.net/uploads/attachments/982738/uploads2ftmp2fcab09243-38a4-429a-a05b-b21d0ef1bf912fbd_WCV9qngWtT.png?auto=compress%2Cformat&w=740&h=555&fit=max "PdM Wrokspace")
