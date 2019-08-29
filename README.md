@@ -1,6 +1,9 @@
 # AI Predictive Medic
+
 Watch The Working First
-[![Watch the video](https://img.youtube.com/vi/4uHltV9FMYE/maxresdefault.jpg)](https://youtu.be/4uHltV9FMYE)
+
+[![Watch the video](https://img.youtube.com/vi/4uHltV9FMYE/hqdefault.jpg)](https://www.youtube.com/watch?v=4uHltV9FMYE)
+
 Think about all the machines you use during a year, all of them, from a toaster every morning to an airplane every summer holiday. Now imagine that, from now on, one of them would fail every day. What impact would that have? The truth is that we are surrounded by machines that make our life easier, but we also get more and more dependent on them. Therefore, the quality of a machine is not only based on how useful and efficient it is, but also on how reliable it is. And together with reliability comes maintenance.
 
 When the impact of a failure cannot be afforded, such as a malfunctioning airplane engine, the machine should be subjected to preventive maintenance. Maintenance becomes a tedious process with increase in complexity of the machine, with many components working together influencing each others' lifetime. In such a system how can one predict the right moment for maintenance so that the components are not prematurely but the whole machine works reliable. There arises the importance of preventive maintenance.
