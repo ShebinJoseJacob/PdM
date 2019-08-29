@@ -1,6 +1,6 @@
 # AI Predictive Medic
 
-Watch The Working First
+Watch The Working First, Click to watch the demo.
 
 [![Watch the video](https://img.youtube.com/vi/4uHltV9FMYE/hqdefault.jpg)](https://www.youtube.com/watch?v=4uHltV9FMYE)
 
